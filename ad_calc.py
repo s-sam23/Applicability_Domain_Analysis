@@ -167,7 +167,12 @@ from rdkit.Chem import Descriptors
 from scipy.spatial import ConvexHull, Delaunay, QhullError
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
-from umap import UMAP
+
+
+# from umap import UMAP
+import umap.umap_ as UMAP
+
+
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 
@@ -194,7 +199,7 @@ class CombinedApplicabilityDomain:
         scaled_descriptors = self.scaler.fit_transform(cleaned_descriptors)
 
         # Apply UMAP for dimensionality reduction
-        self.umap = UMAP(n_components=umap_components)
+        self.umap = UMAP.UMAP(n_components=umap_components)
         reduced_descriptors = self.umap.fit_transform(scaled_descriptors)
 
         # Move to GPU for CuPy-based operations
