@@ -1,0 +1,16 @@
+cupy-cuda12x==13.3.0
+cycler==0.12.1
+Cython==3.0.10
+numpy==1.26.4
+numpydoc==1.7.0
+openpyxl==3.1.5
+pandas==2.1.4
+PubChemPy==1.0.4
+py3Dmol==2.2.0
+pyscf==2.6.0
+pysmiles==1.1.2
+pytest==8.2.2
+rdkit==2023.9.4
+streamlit==1.36.0
+umap==0.1.1
+umap-learn==0.5.6
