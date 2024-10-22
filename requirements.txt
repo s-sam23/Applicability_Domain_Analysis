@@ -12,5 +12,5 @@ pysmiles==1.1.2
 pytest==8.2.2
 rdkit==2023.9.4
 streamlit==1.36.0
-umap==0.1.1
-umap-learn==0.5.6
+umap
+umap-learn
